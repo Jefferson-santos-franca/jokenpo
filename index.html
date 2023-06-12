@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Jokenpo</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Joken Pô</h1>
+
+            <div class="main">
+                <button onclick="playHuman('pedra')" id="pedra">
+                    <img src="./assets/pedra.png" alt="" />
+                </button>
+                <button onclick="playHuman('papel')" id="papel">
+                    <img src="./assets/papel.png" alt="" />
+                </button>
+                <button onclick="playHuman('tesoura')" id="tesoura">
+                    <img src="./assets/tesoura.png" alt="" />
+                </button>
+            </div>
+
+            <p id="result"></p>
+
+            <div class="pontos">
+                <h2>Sua Pontuação: <span id="pHuman">0</span></h2>
+
+                <h2>Pontuação do Computador: <span id="pMachine">0</span></h2>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
